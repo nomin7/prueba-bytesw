@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2- Palindromo</title>
+</head>
+<body>
+    
+<script>
+    function texto() {
+
+        var palabra = prompt("Escribe una palabra").toLowerCase();
+        palabra = palabra.replace(/ /g, "");
+        for (var i = 0; i < palabra.length; i++) {
+            if (palabra[i] != palabra[palabra.length - i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    if (texto()) {
+        alert("La cadena de texto o palabra es palíndromo");
+
+    } else {
+
+        alert("La cadena de texto o palabra no es palíndromo")
+
+    }
+</script>
+</body>
+</html>
